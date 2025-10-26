@@ -20,6 +20,7 @@ class MakeRequest(models.Model):
     startTime = models.TimeField()
     endTime = models.TimeField()
     watcher_role = models.TextField()
+    child_option = models.CharField(max_length=255, default='')
     rate_hour = models.CharField(max_length=255)
     email = models.ForeignKey(Register, on_delete=models.CASCADE)
 
