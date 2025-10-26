@@ -4,7 +4,7 @@ from django.db import models
 class Register(models.Model):
     firstname = models.CharField(max_length=255)
     lastname = models.CharField(max_length=255)
-    email = models.CharField(max_length=255)
+    email = models.CharField(max_length=255, unique=True)
     password = models.CharField(max_length=255)
     zipcode = models.CharField(max_length=255)
     about = models.CharField(max_length=255, default='')
@@ -14,5 +14,16 @@ class Register(models.Model):
 
     def __str__(self):
         return self.firstname
+    
+class MakeRequest(models.Model):
+    selectedStartDate = models.DateField()
+    startTime = models.TimeField()
+    endTime = models.TimeField()
+    watcher_role = models.TextField()
+    rate_hour = models.CharField(max_length=255)
+    email = models.ForeignKey(Register, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.email
 
 
