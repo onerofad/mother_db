@@ -16,13 +16,13 @@ class Register(models.Model):
         return self.firstname
     
 class MakeRequest(models.Model):
-    selectedStartDate = models.DateField()
-    startTime = models.TimeField()
-    endTime = models.TimeField()
+    selectedStartDate = models.CharField(max_length=255, default='')
+    startTime = models.CharField(max_length=255, default='')
+    endTime = models.CharField(max_length=255, default='')
     watcher_role = models.TextField()
     child_option = models.CharField(max_length=255, default='')
-    rate_hour = models.CharField(max_length=255)
-    email = models.ForeignKey(Register, on_delete=models.CASCADE)
+    rate_hour = models.CharField(max_length=255, default='')
+    email = models.CharField(max_length=255, default='')
 
     def __str__(self):
         return self.email
