@@ -26,5 +26,12 @@ class MakeRequest(models.Model):
 
     def __str__(self):
         return self.email
+    
+class Support(models.Model):
+    email = models.CharField(max_length=255)
+    helpText = models.TextField()
+
+    def __str__(self):
+        return self.helpText
 
 
