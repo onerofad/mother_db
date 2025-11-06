@@ -24,7 +24,7 @@ router = routers.DefaultRouter()
 router.register('users', RegisterView, 'user')
 router.register('makerequests', MakeRequestView, 'makerequest')
 router.register('supports', SupportView, 'support')
-router.register('registerwatchers', SupportView, 'registerwatcher')
+router.register('registerwatchers', RegisterWatcherView, 'registerwatcher')
 
 
 
