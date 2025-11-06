@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .models import Register, MakeRequest, Support
-from .serializers import RegisterSerializer, MakeRequestSerializer, SupportSerializer
+from .models import Register, MakeRequest, Support, RegisterWatcher
+from .serializers import RegisterSerializer, MakeRequestSerializer, SupportSerializer, RegisterWatcherSerializer
 
 # Create your views here.
 class RegisterView(viewsets.ModelViewSet):
@@ -15,3 +15,7 @@ class MakeRequestView(viewsets.ModelViewSet):
 class SupportView(viewsets.ModelViewSet):
     queryset = Support.objects.all()
     serializer_class = SupportSerializer
+
+class RegisterWatcherView(viewsets.ModelViewSet):
+    queryset = RegisterWatcher.objects.all()
+    serializer_class = RegisterWatcherSerializer

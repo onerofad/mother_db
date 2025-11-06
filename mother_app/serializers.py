@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Register, MakeRequest, Support
+from .models import Register, MakeRequest, Support, RegisterWatcher
 
 class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
@@ -15,3 +15,8 @@ class SupportSerializer(serializers.ModelSerializer):
     class Meta:
         fields = '__all__'
         model = Support
+
+class RegisterWatcherSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = '__all__'
+        model = RegisterWatcher

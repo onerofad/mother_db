@@ -33,5 +33,25 @@ class Support(models.Model):
 
     def __str__(self):
         return self.helpText
+    
+class RegisterWatcher(models.Model):
+    firstname = models.CharField(max_length=255)
+    lastname = models.CharField(max_length=255)
+    email = models.CharField(max_length=255, unique=True)
+    password = models.CharField(max_length=255)
+    zipcode = models.CharField(max_length=255)
+    phoneno = models.CharField(max_length=255)
+    dob = models.CharField(max_length=255, default='')
+    gender = models.CharField(max_length=255, default='')
+    state = models.CharField(max_length=255, default='')
+    city = models.CharField(max_length=255, default='')
+    skills = models.TextField(max_length=255, default='')
+    about = models.TextField(max_length=255, default='')
+    picture = models.TextField(max_length=255, default='')
+    hour_rate = models.CharField(max_length=255, default='')
+
+
+    def __str__(self):
+        return self.firstname
 
 
