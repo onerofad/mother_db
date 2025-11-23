@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-w1qo$rz^)t4zs+v0(jw1=usu+^)_w&rf6b$ldkajch*mfp=3yy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'localhost:8081', '127.0.0.1', 'exp://10.71.171.142:8081']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'localhost', 'localhost:8081', '127.0.0.1', 'exp://10.71.171.142:8081']
 
 
 # Application definition
@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 #    }
 #}
 DATABASES = {
-    'default': dj_database_url.parse(f'postgresql://postgres:UkSyCFMnYDlMJheUXwWERjXRCShllEzp@crossover.proxy.rlwy.net:23100/railway')
+    'default': dj_database_url.parse(f'postgresql://postgres:bFdHsFRXgrhaoZHuIoosseNIyelARILX@tramway.proxy.rlwy.net:38647/railway')
 }#
 
 # Password validation
