@@ -57,7 +57,8 @@ class RegisterWatcher(models.Model):
     
 class Chats(models.Model):
     chat = models.CharField(max_length=255)
-    email = models.CharField(max_length=255)
+    sender_email = models.CharField(max_length=255, default='')
+    received_email = models.CharField(max_length=255, default='')
 
     def __str__(self):
         return self.chat
