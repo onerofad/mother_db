@@ -54,5 +54,12 @@ class RegisterWatcher(models.Model):
 
     def __str__(self):
         return self.firstname
+    
+class Chats(models.Model):
+    chat = models.CharField(max_length=255)
+    email = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.chat
 
 

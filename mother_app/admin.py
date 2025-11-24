@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Register, MakeRequest, Support
+from .models import Register, MakeRequest, Support, Chats
 
 # Register your models here.
-admin.site.register({Register, MakeRequest, Support})
+admin.site.register({Register, MakeRequest, Support, Chats})
