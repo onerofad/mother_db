@@ -90,8 +90,8 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 #    }
 #}
 DATABASES = {
-    'default': dj_database_url.parse(f'postgresql://postgres:dsuoLMohtcRsJWnBFFsdhyJZdxuWvhcd@mainline.proxy.rlwy.net:25865/railway')
-}#
+    'default': dj_database_url.parse(f'postgresql://postgres:OmBxyOgWhxmNvNPXjUyeAYaEyMMsLKbV@nozomi.proxy.rlwy.net:12836/railway')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
