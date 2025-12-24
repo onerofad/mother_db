@@ -25,7 +25,7 @@ class MakeRequest(models.Model):
     email = models.CharField(max_length=255, default='')
     email_to = models.CharField(max_length=255, default='')
     location = models.CharField(max_length=255, default='')
-    status = models.CharField(max_length=255, default='')
+    status = models.CharField(max_length=255, default=False)
 
     def __str__(self):
         return self.email
