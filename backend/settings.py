@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 #    }
 #}
 DATABASES = {
-    'default': dj_database_url.parse(f'postgresql://postgres:vRLzWhfxnbdQxVjUecOYCwqrcuLfkGsL@yamabiko.proxy.rlwy.net:20103/railway')
+    'default': dj_database_url.parse(f'postgresql://postgres:pCtlTYBVpUHSgqOezNGPOWQsXrGNoCjH@yamabiko.proxy.rlwy.net:40862/railway')
 }
 
 # Password validation
