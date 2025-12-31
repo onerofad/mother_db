@@ -54,6 +54,8 @@ class RegisterWatcher(models.Model):
     about = models.TextField(max_length=255, default='')
     picture = models.TextField(max_length=255, default='')
     hour_rate = models.CharField(max_length=255, default='')
+    cpr = models.BooleanField(default=False)
+    firstaid = models.BooleanField(default=False)
     status = models.BooleanField(default=False)
 
 
