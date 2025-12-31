@@ -20,6 +20,8 @@ class MakeRequest(models.Model):
     startTime = models.CharField(max_length=255, default='')
     endTime = models.CharField(max_length=255, default='')
     watcher_role = models.TextField()
+    mother_name = models.CharField(max_length=255, default='')
+    child_no = models.IntegerField(default=0)
     child_option = models.CharField(max_length=255, default='')
     rate_hour = models.CharField(max_length=255, default='')
     email = models.CharField(max_length=255, default='')
