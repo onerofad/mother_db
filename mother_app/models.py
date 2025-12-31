@@ -22,7 +22,7 @@ class MakeRequest(models.Model):
     watcher_role = models.TextField()
     mother_name = models.CharField(max_length=255, default='')
     child_no = models.IntegerField(default=0)
-    child_option = models.CharField(max_length=255, default='')
+    child_option2 = models.CharField(max_length=255, default='')
     rate_hour = models.CharField(max_length=255, default='')
     email = models.CharField(max_length=255, default='')
     email_to = models.CharField(max_length=255, default='')
