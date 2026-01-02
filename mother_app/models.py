@@ -72,4 +72,21 @@ class Chats(models.Model):
     def __str__(self):
         return self.chat
 
+class Cards(models.Model):
+    firstname = models.CharField(max_length=255, default='')
+    lastname = models.CharField(max_length=255, default='')
+    address1 = models.CharField(max_length=255, default='')
+    address2 = models.CharField(max_length=255, default='')
+    country = models.CharField(max_length=255, default='')
+    state = models.CharField(max_length=255, default='')
+    city = models.CharField(max_length=255, default='')
+    zipcode = models.CharField(max_length=255, default='')
+    mobile = models.CharField(max_length=255, default='')
+    cardnumber = models.CharField(max_length=255, default='')
+    expirationdate = models.CharField(max_length=255, default='')
+    cvv = models.CharField(max_length=255, default='')
+
+    def __str__(self):
+        return self.cardnumber
+
 

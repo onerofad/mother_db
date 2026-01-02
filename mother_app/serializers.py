@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Register, MakeRequest, Support, RegisterWatcher, Chats
+from .models import Register, MakeRequest, Support, RegisterWatcher, Chats, Cards
 
 class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
@@ -25,3 +25,8 @@ class ChatSerializer(serializers.ModelSerializer):
     class Meta:
         fields = '__all__'
         model = Chats
+
+class CardSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = '__all__'
+        model = Cards
