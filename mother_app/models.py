@@ -31,6 +31,7 @@ class MakeRequest(models.Model):
     zipcode = models.CharField(max_length=255, default='')
     picture = models.TextField(default='')
     picture2 = models.TextField(default='')
+    watcher_name = models.CharField(max_length=255, default='')
     status = models.BooleanField(default=False)
     confirm = models.BooleanField(default=False)
 
