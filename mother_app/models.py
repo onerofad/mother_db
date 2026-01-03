@@ -29,7 +29,9 @@ class MakeRequest(models.Model):
     location = models.CharField(max_length=255, default='')
     address = models.TextField(default='')
     zipcode = models.CharField(max_length=255, default='')
-    status = models.BooleanField(max_length=255, default=False)
+    status = models.BooleanField(default=False)
+    confirm = models.BooleanField(default=False)
+
 
     def __str__(self):
         return self.email
