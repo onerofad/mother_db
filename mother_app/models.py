@@ -30,6 +30,7 @@ class MakeRequest(models.Model):
     address = models.TextField(default='')
     zipcode = models.CharField(max_length=255, default='')
     picture = models.TextField(default='')
+    picture2 = models.TextField(default='')
     status = models.BooleanField(default=False)
     confirm = models.BooleanField(default=False)
 
