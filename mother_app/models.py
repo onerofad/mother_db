@@ -58,6 +58,7 @@ class RegisterWatcher(models.Model):
     hour_rate = models.CharField(max_length=255, default='')
     cpr = models.BooleanField(default=False)
     firstaid = models.BooleanField(default=False)
+    backcheck = models.BooleanField(default=False)
     status = models.BooleanField(default=False)
 
 
