@@ -25,7 +25,7 @@ class MakeRequest(models.Model):
     child_option2 = models.CharField(max_length=255, default='')
     rate_hour = models.CharField(max_length=255, default='')
     email = models.CharField(max_length=255, default='')
-    email_to = models.CharField(max_length=255, default='')
+    email_to = models.CharField(max_length=255, default='', blank=True)
     location = models.CharField(max_length=255, default='')
     address = models.TextField(default='')
     zipcode = models.CharField(max_length=255, default='')
