@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from mother_app.views import RegisterView, MakeRequestView, SupportView, RegisterWatcherView, ChatView, CardView
+from mother_app.views import RegisterView, MakeRequestView, SupportView, RegisterWatcherView, ChatView, CardView, NotificationView
 
 router = routers.DefaultRouter()
 
@@ -27,6 +27,8 @@ router.register('supports', SupportView, 'support')
 router.register('registerwatchers', RegisterWatcherView, 'registerwatcher')
 router.register('chats', ChatView, 'chat')
 router.register('cards', CardView, 'card')
+router.register('notifications', CardView, 'notification')
+
 
 
 urlpatterns = [

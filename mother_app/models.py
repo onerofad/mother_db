@@ -95,5 +95,14 @@ class Cards(models.Model):
 
     def __str__(self):
         return self.cardnumber
+    
+class Notification(models.Model):
+    sendemail = models.BooleanField(default=False)
+    sendphone = models.BooleanField(default=False)
+    no = models.BooleanField(default=False)
+    email = models.CharField(max_length=255, default='')
+  
+    def __str__(self):
+        return self.cardnumber
 
 
