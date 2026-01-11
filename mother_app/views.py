@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .models import Register, MakeRequest, Support, RegisterWatcher, Chats, Cards, Notification
-from .serializers import RegisterSerializer, MakeRequestSerializer, SupportSerializer, RegisterWatcherSerializer, ChatSerializer, CardSerializer, NotificationSerializer
+from .models import Register, MakeRequest, Support, RegisterWatcher, Chats, Cards
+from .serializers import RegisterSerializer, MakeRequestSerializer, SupportSerializer, RegisterWatcherSerializer, ChatSerializer, CardSerializer
 
 # Create your views here.
 class RegisterView(viewsets.ModelViewSet):
@@ -27,7 +27,3 @@ class ChatView(viewsets.ModelViewSet):
 class CardView(viewsets.ModelViewSet):
     queryset = Cards.objects.all()
     serializer_class = CardSerializer
-
-class NotificationView(viewsets.ModelViewSet):
-    queryset = Notification.objects.all()
-    serializer_class = NotificationSerializer

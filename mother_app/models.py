@@ -11,6 +11,9 @@ class Register(models.Model):
     state = models.CharField(max_length=255, default='')
     city = models.CharField(max_length=255, default='')
     picture = models.TextField(max_length=255, default='')
+    sendemail = models.BooleanField(default=False)
+    sendphone = models.BooleanField(default=False)
+    no = models.BooleanField(default=False)
 
     def __str__(self):
         return self.firstname
@@ -65,6 +68,9 @@ class RegisterWatcher(models.Model):
     firstaid = models.BooleanField(default=False)
     backcheck = models.BooleanField(default=False)
     status = models.BooleanField(default=False)
+    sendemail = models.BooleanField(default=False)
+    sendphone = models.BooleanField(default=False)
+    no = models.BooleanField(default=False)
 
 
     def __str__(self):
@@ -96,13 +102,5 @@ class Cards(models.Model):
     def __str__(self):
         return self.cardnumber
     
-class Notification(models.Model):
-    sendemail = models.BooleanField(default=False)
-    sendphone = models.BooleanField(default=False)
-    no = models.BooleanField(default=False)
-    email = models.CharField(max_length=255, default='')
-  
-    def __str__(self):
-        return self.cardnumber
 
 
