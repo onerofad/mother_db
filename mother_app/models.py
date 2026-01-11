@@ -91,6 +91,7 @@ class Cards(models.Model):
     cardnumber = models.CharField(max_length=255, default='')
     expirationdate = models.CharField(max_length=255, default='')
     cvv = models.CharField(max_length=255, default='')
+    email = models.CharField(max_length=255, default='')
 
     def __str__(self):
         return self.cardnumber
